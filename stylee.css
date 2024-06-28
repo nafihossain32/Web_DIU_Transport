@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Contact Form Styles */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.contact-left-title {
+  margin-bottom: 20px;
+}
+
+.contact-left-title h2 {
+  margin: 0;
+}
+
+.contact-left-title hr {
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  width: 50px;
+  margin: 10px 0;
+}
+
+.contact-inputs {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-inputs:focus {
+  border-color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+button img {
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #575757;
+}
+
+.contact-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
